@@ -13,17 +13,21 @@ nodemon → Auto-restarts server
 
 Step 2: (Requiring & Setting up the Server)
 
-const express = require("express");
-const cors = require("cors");
-require("dotenv").config();
+Created index.js for express, cors and dotenv
 
-const app = express();
-app.use(express.json());
-app.use(cors());
+1️⃣ Imports Express.js, CORS, and dotenv.
+2️⃣ Initializes the Express app and enables JSON body parsing.
+3️⃣ Loads genre-related routes from routes/genres.js.
+4️⃣ Starts the server on port 3000 (or .env defined port).
 
-const genreRoutes = require("./routes/genres");
-app.use("/api/genres", genreRoutes);
+Using route for genre.js
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+express.Router() creates a modular mini-server for API routes.
+We use it to group related routes (e.g., all genre-related routes).
+We export router, so index.js can require and use it.
+app.use("/api/genres", genreRoutes); makes sure all routes in genre.js start with /api/genres.
+
+HTTP Method	URL	What It Does
+GET	http://localhost:3000/api/genres	Calls router.get("/") (All genres)
+GET	http://localhost:3000/api/genres/2	Calls router.get("/:id") (Single genre)
 
