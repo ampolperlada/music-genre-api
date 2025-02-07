@@ -1,7 +1,12 @@
-Step 1:
+Step 1: (Installing)
 npm init -y
 npm install express cors joi nodemon
-express → Handles routing
-cors → Enables cross-origin requests (for frontend later)
-joi → Validates user input
-nodemon → Auto-restarts server on changes
+npm install -g nodemon
+
+FUNCTION OF INSTALLING:
+
+express → Web framework
+cors → Allows API to be used by frontend
+pg → PostgreSQL driver for Node.js
+dotenv → Loads environment variables (e.g., DB credentials)
+nodemon → Auto-restarts server
