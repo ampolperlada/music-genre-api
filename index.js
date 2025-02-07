@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const genreRoutes = require("./routes/genres");
+const genreRoutes = require("./routes/genre");
 app.use("/api/genres", genreRoutes);
 
 const PORT = process.env.PORT || 3000;

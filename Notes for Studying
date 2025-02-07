@@ -1,0 +1,29 @@
+Step 1: (Installing)
+npm init -y
+npm install express cors joi nodemon
+npm install -g nodemon
+
+FUNCTION OF INSTALLING:
+
+express → Web framework
+cors → Allows API to be used by frontend
+pg → PostgreSQL driver for Node.js
+dotenv → Loads environment variables (e.g., DB credentials)
+nodemon → Auto-restarts server
+
+Step 2: (Requiring & Setting up the Server)
+
+const express = require("express");
+const cors = require("cors");
+require("dotenv").config();
+
+const app = express();
+app.use(express.json());
+app.use(cors());
+
+const genreRoutes = require("./routes/genres");
+app.use("/api/genres", genreRoutes);
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
