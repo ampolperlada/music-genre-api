@@ -1,0 +1,7 @@
+Step 1:
+npm init -y
+npm install express cors joi nodemon
+express → Handles routing
+cors → Enables cross-origin requests (for frontend later)
+joi → Validates user input
+nodemon → Auto-restarts server on changes
