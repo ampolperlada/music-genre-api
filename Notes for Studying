@@ -31,3 +31,5 @@ HTTP Method	URL	What It Does
 GET	http://localhost:3000/api/genres	Calls router.get("/") (All genres)
 GET	http://localhost:3000/api/genres/2	Calls router.get("/:id") (Single genre)
 
+Step: 3
+Creating the All the methods in genre.js GET/GET ID/POST/PUT/DELETE
