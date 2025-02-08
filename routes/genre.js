@@ -45,5 +45,20 @@ router.post("/", (req, res) => {
   res.status(201).json(newGenre);
 });
 
+//PUT (Update a Genre)
+// PUT - Update a genre
+router.put("/:id", (req, res) => {
+  const genre = genres.find(g => g.id === parseInt(req.params.id));
+  if (!genre) return res.status(404).json({ message: "Genre not found" });
+
+  if (!req.body.name || req.body.name.length < 3) {
+    return res.status(400).json({ message: "Name should be at least 3 characters" });
+  }
+
+  genre.name = req.body.name;
+  res.json(genre);
+});
+
+
 
 module.exports = router;
