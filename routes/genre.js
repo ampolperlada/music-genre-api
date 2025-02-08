@@ -7,9 +7,16 @@
 const express = require("express");
 const router = express.Router();
 
-// Sample GET route
-router.get("/", (req, res) => {
-  res.send("Genres API is working!");
+let genres = [
+  { id: 1, name: "Rock" },
+  { id: 2, name: "Jazz" },
+  { id: 3, name: "Hip Hop" }
+];
+
+// GET all genres
+router.get("/", (req, res) => { //The slash / in router.get("/") just means "this is the main route inside this router."
+  res.json(genres);
 });
+
 
 module.exports = router;
