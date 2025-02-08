@@ -29,4 +29,21 @@ router.get("/:id", (req, res) => {
   res.json(genre);
 });
 
+//POST (Create a New Genre)
+// POST - Add a new genre
+router.post("/", (req, res) => {
+  if (!req.body.name || req.body.name.length < 3) {
+    return res.status(400).json({ message: "Name is required and should be at least 3 characters" });
+  }
+
+  const newGenre = {
+    id: genres.length + 1, // Auto-increment ID
+    name: req.body.name
+  };
+
+  genres.push(newGenre);
+  res.status(201).json(newGenre);
+});
+
+
 module.exports = router;
