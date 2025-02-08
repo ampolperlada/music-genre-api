@@ -13,10 +13,20 @@ let genres = [
   { id: 3, name: "Hip Hop" }
 ];
 
+//Start with GET (Fetch All Genres)
+
 // GET all genres
 router.get("/", (req, res) => { //The slash / in router.get("/") just means "this is the main route inside this router."
   res.json(genres);
 });
 
+
+// GET a genre by ID
+router.get("/:id", (req, res) => {
+  const genre = genres.find(g => g.id === parseInt(req.params.id));
+  if (!genre) return res.status(404).json({ message: "Genre not found" });
+
+  res.json(genre);
+});
 
 module.exports = router;
