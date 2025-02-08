@@ -40,3 +40,8 @@ GET	/api/genres/:id	Get a genre by ID
 POST	/api/genres	Add a new genre
 PUT	/api/genres/:id	Update a genre
 DELETE	/api/genres/:id	Remove a genre
+
+Step 4:
+ Next Steps: Connect to PostgreSQL
+
+ Install PostgreSQL & Node.js Client
