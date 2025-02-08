@@ -33,3 +33,10 @@ GET	http://localhost:3000/api/genres/2	Calls router.get("/:id") (Single genre)
 
 Step: 3
 Creating the All the methods in genre.js GET/GET ID/POST/PUT/DELETE
+
+Method	URL	What It Does
+GET	/api/genres	Fetch all genres
+GET	/api/genres/:id	Get a genre by ID
+POST	/api/genres	Add a new genre
+PUT	/api/genres/:id	Update a genre
+DELETE	/api/genres/:id	Remove a genre
