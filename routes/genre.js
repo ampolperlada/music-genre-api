@@ -59,6 +59,16 @@ router.put("/:id", (req, res) => {
   res.json(genre);
 });
 
+//DELETE (Remove a Genre)
+// DELETE - Remove a genre
+router.delete("/:id", (req, res) => {
+  const index = genres.findIndex(g => g.id === parseInt(req.params.id));
+  if (index === -1) return res.status(404).json({ message: "Genre not found" });
+
+  const deletedGenre = genres.splice(index, 1);
+  res.json(deletedGenre);
+});
+
 
 
 module.exports = router;
