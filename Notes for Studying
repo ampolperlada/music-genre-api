@@ -1,3 +1,9 @@
+PROJECT STRUCTURE
+
+
+
+
+
 Step 1: (Installing)
 npm init -y
 npm install express cors joi nodemon
@@ -66,3 +72,5 @@ DB_PORT=5432
 POSTGRE SQL PASSWORD: ampoloppa
 
 Step 5: Connect Express.js to PostgreSQL
+
+Created another file called models and inside that is another genre.js that handles (Handles database queries)
