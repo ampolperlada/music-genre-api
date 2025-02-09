@@ -42,7 +42,7 @@ PUT	/api/genres/:id	Update a genre
 DELETE	/api/genres/:id	Remove a genre
 
 Step 4:
- Next Steps: Connect to PostgreSQL
+ Next Steps: Modify PostgreSQL (Make the database and make sample)
 
  Install PostgreSQL & Node.js Client
 
@@ -62,3 +62,7 @@ DB_NAME=musicdb
 DB_PASS=your_db_password
 DB_PORT=5432
 ✅ Replace your_db_user and your_db_password with your actual PostgreSQL credentials.
+
+POSTGRE SQL PASSWORD: ampoloppa
+
+Step 5: Connect Express.js to PostgreSQL
