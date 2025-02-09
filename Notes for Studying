@@ -45,3 +45,8 @@ Step 4:
  Next Steps: Connect to PostgreSQL
 
  Install PostgreSQL & Node.js Client
+
+ Creted config/db.js
+
+ Then require pg and dotenv 
+ chatgpt the entire process of db
