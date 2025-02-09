@@ -50,3 +50,15 @@ Step 4:
 
  Then require pg and dotenv 
  chatgpt the entire process of db
+
+ Adding:  Add Database Credentials into .env
+
+ In  project root, create a .env file:
+
+env
+DB_USER=your_db_user
+DB_HOST=localhost
+DB_NAME=musicdb
+DB_PASS=your_db_password
+DB_PORT=5432
+✅ Replace your_db_user and your_db_password with your actual PostgreSQL credentials.
