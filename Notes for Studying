@@ -94,4 +94,9 @@ Dependency conflict → Some packages expect React 18, but you have React 19.
 
 ✅ Option 2: Use React 18 Instead = npm uninstall react react-dom
 
+So many error in React just reminder for next time update all the app first to reduce erros 
 
+Summary of Fixes
+Solution	Steps
+Fix 1 (Quickest): Set OpenSSL Legacy Mode	Run set NODE_OPTIONS=--openssl-legacy-provider && npm start
+Fix 2 (Best for Stability): Downgrade to Node.js 16	Uninstall Node.js 18 → Install Node.js 16 → Reinstall dependencies
