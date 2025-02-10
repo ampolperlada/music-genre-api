@@ -82,3 +82,16 @@ Step 5: Connect Express.js to PostgreSQL
 
 Step: 6 Creating the UI (Frontend) React.js
 
+npx create-react-app music-frontend
+
+I had a prob updating prob:
+Solution:
+Your React project installation failed because:
+
+React 19.0.0 is installed, but @testing-library/react only supports React 18.
+Dependency conflict → Some packages expect React 18, but you have React 19.
+✅ Option 1: Force Install with Compatibility Mode = npm install --legacy-peer-deps
+
+✅ Option 2: Use React 18 Instead npm uninstall react react-dom
+
+
