@@ -100,3 +100,5 @@ Summary of Fixes
 Solution	Steps
 Fix 1 (Quickest): Set OpenSSL Legacy Mode	Run set NODE_OPTIONS=--openssl-legacy-provider && npm start
 Fix 2 (Best for Stability): Downgrade to Node.js 16	Uninstall Node.js 18 → Install Node.js 16 → Reinstall dependencies
+
+!!! PRO TIP: NEXT TIME DOING FRONTEND(REACT USE VITE!!)
