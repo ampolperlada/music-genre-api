@@ -1,3 +1,9 @@
+require("dotenv").config();
+console.log("DB User:", process.env.DB_USER);
+console.log("DB Password:", process.env.DB_PASS);
+
+
+
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();

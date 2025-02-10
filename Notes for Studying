@@ -73,4 +73,10 @@ POSTGRE SQL PASSWORD: ampoloppa
 
 Step 5: Connect Express.js to PostgreSQL
 
-Created another file called models and inside that is another genre.js that handles (Handles database queries)
+1,Created another file called models and inside that is another genre.js that handles (Handles database queries)
+2,Install PostgreSQL Client for Node.js
+3,Configure Database Connection (config/db.js)
+4,Add Database Credentials (.env file)
+5,Update the Model (models/genre.js) - ✅ Now, all genre-related actions will interact with PostgreSQL.
+6,Update Routes to Use the Model (routes/genre.js) - ✅ Your routes now work with PostgreSQL instead of an in-memory array.
+
