@@ -1,10 +1,6 @@
 import React from "react";
-import Home from "./Home.jsx";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom"; // ✅ Correct import for React Router v6
+import Home from "./Home"; // ✅ No need to add .jsx extension
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
