@@ -1,12 +1,18 @@
 import React from "react";
-import Home from "./pages/Home"; // ✅ No need to add .jsx extension
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Genres from "./pages/Genres";
+import AddGenre from "./pages/AddGenre";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/genres" element={<Genres />} />  {/* ✅ Ensure this path is correct */}
+        <Route path="/add-genre" element={<AddGenre />} />
       </Routes>
     </Router>
   );

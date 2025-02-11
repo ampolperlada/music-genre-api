@@ -1,0 +1,16 @@
+.genres-container {
+  text-align: center;
+}
+
+.genres-list {
+  list-style: none;
+  padding: 0;
+}
+
+.genre-item {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
