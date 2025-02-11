@@ -102,3 +102,22 @@ Fix 1 (Quickest): Set OpenSSL Legacy Mode	Run set NODE_OPTIONS=--openssl-legacy-
 Fix 2 (Best for Stability): Downgrade to Node.js 16	Uninstall Node.js 18 → Install Node.js 16 → Reinstall dependencies
 
 !!! PRO TIP: NEXT TIME DOING FRONTEND(REACT USE VITE!!)
+
+
+If its okay (COMPILED SUCCESSFULLY)
+
+Your Music API UI will have the following main pages/components:
+
+🔹 Pages (Rendered with React Router)
+1️⃣ Home Page (/) → Shows welcome text & navigation
+2️⃣ Genres Page (/genres) → Displays all genres
+3️⃣ Add Genre Page (/add-genre) → Form to add a new genre
+
+
+Components (Reusable UI Parts)
+Component Name	What It Does
+Navbar.jsx	-Displays navigation links (Home, Genres, Add Genre)
+GenreList.jsx	-Fetches and shows genres from API
+AddGenre.jsx	-Form to add a new genre
+UpdateGenre.jsx	-Form to update/delete a genre
+Footer.jsx	-Footer for the site
