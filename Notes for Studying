@@ -121,3 +121,10 @@ GenreList.jsx	-Fetches and shows genres from API
 AddGenre.jsx	-Form to add a new genre
 UpdateGenre.jsx	-Form to update/delete a genre
 Footer.jsx	-Footer for the site
+
+Fix: Install axios
+Run this command inside your React project (music-frontend):
+
+cd C:\music-genre-api\music-frontend
+npm install axios
+✅ This will install axios, allowing your app to fetch data from the backend.
