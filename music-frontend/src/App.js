@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar";  // ✅ Use full path
+import Home from "./pages/Home.jsx";
 import Genres from "./pages/Genres";
 import AddGenre from "./pages/AddGenre";
 
