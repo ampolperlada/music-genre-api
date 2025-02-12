@@ -6,7 +6,7 @@ const Genres = () => {
   const [genres, setGenres] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/genres")
+    axios.get("http://localhost:3000/api/genres")  //Requesting data from backend
       .then(response => setGenres(response.data))
       .catch(error => console.error("Error fetching genres:", error));
   }, []);

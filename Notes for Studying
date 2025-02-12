@@ -1,7 +1,12 @@
 PROJECT STRUCTURE
 
 
-
+✅ 1️⃣ How the Connection Works
+1️⃣ React sends a request to the backend (Node.js API) → fetch() or axios.get() 
+1️⃣📄 Genres.jsx (React Fetching from Backend)
+2️⃣ Node.js API processes the request and fetches data from PostgreSQL
+3️⃣ Node.js API sends the response (JSON) back to React
+4️⃣ React displays the data
 
 
 Step 1: (Installing)
