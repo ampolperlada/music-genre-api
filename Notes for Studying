@@ -133,3 +133,33 @@ Run this command inside your React project (music-frontend):
 cd C:\music-genre-api\music-frontend
 npm install axios
 ✅ This will install axios, allowing your app to fetch data from the backend.
+
+
+
+
+Step 8: Deployment 
+
+✅ Option 1: Deploy Backend & Frontend Separately (Best for APIs)
+📌 Backend (Node.js + PostgreSQL) → Deploy on Render, Railway, or Vercel
+📌 Frontend (React) → Deploy on Vercel or Netlify
+
+✅ Why choose this?
+
+Works best if other apps might use your API in the future.
+Keeps your frontend and backend independent (easier updates).
+✅ Option 2: Combine Backend & Frontend in One Deployment
+📌 Both Backend & Frontend → Deploy as one Node.js app
+📌 How?
+
+Place the React build folder inside your backend project.
+Serve React from Express using express.static().
+Deploy the backend on Render or Railway (it will serve the React app too).
+✅ Why choose this?
+
+One single project to deploy.
+Easier if your frontend only uses your API (no external access needed).
+🔥 Which Option Should You Choose?
+❓ Do you want your backend to be usable by other projects?
+
+YES → Deploy them separately.
+NO → Combine them into one deployment.
