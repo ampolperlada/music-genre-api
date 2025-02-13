@@ -216,3 +216,21 @@ Easier if your frontend only uses your API (no external access needed).
 
 YES → Deploy them separately.
 NO → Combine them into one deployment.
+
+
+🐳 What is Docker?
+Docker is a tool that packages your app (backend + frontend + database) into a container that runs the same way everywhere.
+
+ What is Docker?
+Docker is a tool that packages your app (backend + frontend + database) into a container that runs the same way everywhere.
+
+📌 Why use Docker?
+✅ Your app runs exactly the same on any computer.
+✅ No need to install dependencies manually (npm install, psql setup, etc.).
+✅ Makes deployment faster and easier.
+
+📌 How it works:
+
+You create a Dockerfile that describes how your app should run.
+You build a Docker image (a packaged version of your app).
+You run the image inside a Docker container
